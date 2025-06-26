@@ -72,6 +72,7 @@ function playRound(humanChoice, computerChoice) {
   }
 }
 
+//get a final result after a score reaches 5
 function result() {
   if (humanScore === 5 || computerScore === 5) {
     let finalResult = "";
