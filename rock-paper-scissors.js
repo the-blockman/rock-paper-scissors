@@ -58,14 +58,14 @@ function playRound(humanChoice, computerChoice) {
       return "You Lose! Scissors beats Paper.";
     }
   } else if (humanChoice === "scissors") {
-    if (computerChoice === "rock") {
+    if (computerChoice === "scissors") {
       return "It's a Tie";
-    } else if (computerChoice === "paper") {
+    } else if (computerChoice === "rock") {
       computerScore++;
-      return "You Lose! Paper beats Rock.";
+      return "You Lose! Rock beats Scissors.";
     } else {
       humanScore++;
-      return "You Win, Rock beats Scissors";
+      return "You Win, Scissors beats Paper";
     }
   } else {
     return "input a valid game";
